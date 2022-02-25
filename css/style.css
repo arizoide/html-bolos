@@ -106,7 +106,7 @@ nav li {
 }
 
 .img-wpp {
-    position: absolute;
+    position: fixed;
     display: inline-block;
     margin: 50px 0px 0px 0px;
     right: 50px;
@@ -120,4 +120,67 @@ footer {
 
 footer img {
     margin-top: 25px;
+}
+
+@media screen and (max-width: 939px){
+    .bloco, .lista-bolos {
+        width: auto;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .lista-bolos li {
+        display: block;
+        width: 95%;
+        margin: 25px 2.5%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .bloco, .lista-bolos {
+        width: auto;
+    }
+
+    nav {
+        position: static;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .lista-bolos li {
+        display: block;
+        width: 95%;
+        margin: 25px 2.5%;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;;
+    }
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+
+    h1 {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .wpp {
+        display: none;
+    }
 }
